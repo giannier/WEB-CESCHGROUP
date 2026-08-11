@@ -1,0 +1,39 @@
+change: obras-inmersivas
+created: 2026-08-11
+artifact_store: openspec
+execution_mode: auto
+delivery_strategy: exception-ok
+notes: >
+  Engram MCP was not exposed to the authoring session; the engram CLI
+  (v1.20.0) was used directly for memory and OpenSpec files are the
+  authoritative artifacts. Delivery ran as a single pass at the user's
+  explicit request ("termina el proyecto") despite the chained-PR
+  forecast in tasks.md.
+
+phases:
+  explore:
+    status: skipped
+    reason: The codebase was authored in this same session; no exploration needed.
+  proposal:
+    status: complete
+    artifact: proposal.md
+  spec:
+    status: complete
+    artifact: specs/portafolio-obras/spec.md
+  design:
+    status: complete
+    artifact: design.md
+  tasks:
+    status: complete
+    artifact: tasks.md
+  apply:
+    status: complete
+    artifact: tasks.md
+  verify:
+    status: complete
+    artifact: verify-report.md
+  archive:
+    status: pending
+
+next_recommended: archive
+blocked_reasons: []

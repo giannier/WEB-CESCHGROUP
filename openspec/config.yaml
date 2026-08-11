@@ -1,0 +1,50 @@
+schema: spec-driven
+
+context: |
+  Project:      CESCHGROUP — construction and works-supervision company
+                (Chiclayo, Lambayeque, Peru). Public marketing site.
+  Tech stack:   Static HTML5 + CSS3 + vanilla ES5-compatible JavaScript.
+                GSAP 3.12.5 (gsap, ScrollTrigger, Flip) vendored under
+                assets/vendor/gsap/. Optional PHP 8 endpoints for mail.
+                No build step, no package manager, no framework.
+  Architecture: Content-as-data. Every page is static markup with empty
+                mount points; assets/js/datos.js holds all content
+                (EMPRESA, OBRAS, SERVICIOS, CIFRAS) and assets/js/app.js
+                renders it. assets/css/marca.css holds every brand token;
+                assets/css/estilos.css contains no literal colors.
+  Deployment:   cPanel shared host, deployed by git pull. Everything the
+                browser needs must be committed — no CDN, no install step.
+  Testing:      Node + jsdom for DOM behavior, puppeteer-core driving the
+                installed Chrome for layout, overflow and visual checks.
+                No test runner is installed in the repo; suites live in
+                the session scratchpad and are run ad hoc.
+  Style:        Spanish identifiers, comments and UI copy throughout —
+                the codebase convention. Neutral professional Spanish.
+
+rules:
+  proposal:
+    - State what the client must capture (photos) versus what code delivers
+    - Include a rollback plan; the site must never regress to broken
+  specs:
+    - Use Given/When/Then for scenarios
+    - Use RFC 2119 keywords (MUST, SHALL, SHOULD, MAY)
+    - Every immersive feature MUST specify its no-asset fallback
+  design:
+    - Document architecture decisions with rationale and rejected options
+    - State the performance budget for every asset class
+  tasks:
+    - Group by phase, use hierarchical numbering
+    - Keep tasks completable in one session
+  apply:
+    guidelines:
+      - Follow existing code patterns; no framework, no build step
+      - Never write a literal color outside marca.css
+      - Every new content field goes in datos.js, never in HTML
+    tdd: false
+    test_command: ""
+  verify:
+    test_command: ""
+    build_command: ""
+    coverage_threshold: 0
+  archive:
+    - Warn before merging destructive deltas

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Obras y proyectos | CESCHGROUP</title>
+<meta name="description" content="Obras culminadas, obras en ejecución y proyectos en cartera. Entidad contratante, monto contractual, plazo y avance físico de cada obra.">
+<link rel="canonical" href="https://www.dominio.pe/obras.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Obras y proyectos | CESCHGROUP">
+<meta property="og:description" content="Obras culminadas, obras en ejecución y proyectos en cartera. Entidad contratante, monto contractual, plazo y avance físico de cada obra.">
+<meta property="og:locale" content="es_PE">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/marca.css">
+<link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+
+<div class="barra-superior">
+  <div class="contenedor">
+    <span>Registro Nacional de Proveedores · Ejecutor y Consultor de Obras</span>
+    <ul>
+      <li><a data-emp="telefono" data-emp-prefijo="tel:"></a></li>
+      <li><a data-emp="email" data-emp-prefijo="mailto:"></a></li>
+    </ul>
+  </div>
+</div>
+
+<header class="cabecera">
+  <div class="contenedor">
+    <a class="marca" href="index.html">
+      <!-- Reemplazar este bloque por <img src="assets/img/logo.svg" alt="..."> cuando llegue el logo -->
+      <span class="isotipo" data-iso aria-hidden="true">C</span>
+      <span class="marca-texto">
+        <span class="marca-nombre" data-emp="nombre"></span>
+        <span class="marca-bajada" data-emp="bajada"></span>
+      </span>
+    </a>
+
+    <button class="hamburguesa" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal">
+      <span></span>
+    </button>
+
+    <nav class="menu" id="menu-principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">La empresa</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="obras.html">Obras</a></li>
+        <li><a href="obras.html?estado=proyecto">Proyectos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <a class="boton boton--acento" data-wa="Hola, quisiera solicitar una cotización.">Cotizar</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="seccion seccion--oscura plano-oscuro" style="padding-block:var(--e7) var(--e6)">
+  <div class="contenedor">
+    <p class="migas"><a href="index.html">Inicio</a> / Obras</p>
+    <h1 style="max-width:18ch">Obras culminadas, en ejecución y en cartera</h1>
+    <p class="entradilla">El portafolio completo, con la misma ficha técnica para todas: quién contrata, cuánto cuesta, cuánto dura y en qué punto está.</p>
+  </div>
+</section>
+
+<section class="seccion">
+  <div class="contenedor">
+
+    <div class="filtros">
+      <button class="filtro" data-estado="todas" aria-pressed="true">Todas</button>
+      <button class="filtro" data-estado="ejecucion" aria-pressed="false">En ejecución</button>
+      <button class="filtro" data-estado="culminada" aria-pressed="false">Culminadas</button>
+      <button class="filtro" data-estado="proyecto" aria-pressed="false">Proyectos</button>
+    </div>
+
+    <div class="buscador" style="margin:0 0 var(--e4);grid-template-columns:1fr 1fr">
+      <label>
+        <span>Servicio</span>
+        <select id="filtro-servicio">
+          <option value="todos">Todos los servicios</option>
+          <option value="Construcción">Construcción</option>
+          <option value="Supervisión">Supervisión</option>
+          <option value="Proyectos">Proyectos</option>
+        </select>
+      </label>
+      <label style="border-right:0">
+        <span>Buscar</span>
+        <input type="search" id="filtro-texto" placeholder="Nombre, distrito, entidad o tipo de obra">
+      </label>
+    </div>
+
+    <div class="rejilla rejilla-3" id="rejilla-obras"></div>
+  </div>
+</section>
+</main>
+
+<section class="franja plano-oscuro">
+  <div class="contenedor">
+    <div>
+      <h2>¿Tiene una obra por ejecutar o supervisar?</h2>
+      <p>Revisamos su expediente y le respondemos con alcance, plazo y presupuesto estimado en un plazo de 48 horas.</p>
+    </div>
+    <div style="display:flex;gap:.75rem;flex-wrap:wrap">
+      <a class="boton boton--acento" href="contacto.html">Escribir a la empresa</a>
+      <a class="boton boton--claro" data-wa="Hola, quisiera coordinar una reunión técnica.">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie-superior">
+      <div>
+        <div class="marca">
+          <span class="isotipo" data-iso aria-hidden="true">C</span>
+          <span class="marca-texto">
+            <span class="marca-nombre" data-emp="nombre"></span>
+            <span class="marca-bajada" data-emp="bajada"></span>
+          </span>
+        </div>
+        <p class="pie-texto">Ejecución y supervisión de obras de infraestructura pública y privada en el norte del Perú.</p>
+        <div class="redes">
+          <a data-emp="redes.facebook" data-emp-texto="no" aria-label="Facebook" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-9h3l1-4h-4V7c0-1.1.3-1.8 1.9-1.8H17V1.6C16.7 1.6 15.4 1.5 14 1.5c-3 0-5 1.8-5 5.2V9H6v4h3v9h4z"/></svg>
+          </a>
+          <a data-emp="redes.instagram" data-emp-texto="no" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a data-emp="redes.linkedin" data-emp-texto="no" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.03-3.06-1.9-3.06-1.9 0-2.2 1.45-2.2 2.96V21H9z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="nosotros.html">La empresa</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="obras.html?estado=ejecucion">Obras en ejecución</a></li>
+          <li><a href="obras.html?estado=culminada">Obras culminadas</a></li>
+          <li><a href="obras.html?estado=proyecto">Proyectos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="servicios.html#ejecucion">Ejecución de obras</a></li>
+          <li><a href="servicios.html#supervision">Supervisión de obras</a></li>
+          <li><a href="servicios.html#expedientes">Expedientes técnicos</a></li>
+          <li><a href="servicios.html#liquidacion">Gestión y liquidación</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li data-emp="direccion"></li>
+          <li><a data-emp="telefono" data-emp-prefijo="tel:"></a></li>
+          <li><a data-emp="celular" data-emp-prefijo="tel:"></a></li>
+          <li><a data-emp="email" data-emp-prefijo="mailto:"></a></li>
+          <li><a data-emp="emailLicitaciones" data-emp-prefijo="mailto:"></a></li>
+          <li data-emp="horario"></li>
+        </ul>
+        <a class="libro" href="libro-de-reclamaciones.html" style="margin-top:1rem">
+          <span aria-hidden="true">📕</span> Libro de reclamaciones
+        </a>
+      </div>
+    </div>
+
+    <div class="pie-inferior">
+      <span><span data-emp="razonSocial"></span> · RUC <span data-emp="ruc"></span></span>
+      <span>© <span id="anio"></span> <span data-emp="nombre"></span>. Todos los derechos reservados.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="flotante" data-wa="Hola, quisiera información sobre sus servicios." aria-label="Escribir por WhatsApp" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20zm4.4-5.8c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.1-.3 0-.5l-.7-1.7c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.8 1.6.6 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.4-.3z"/></svg>
+</a>
+
+<script src="assets/js/datos.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

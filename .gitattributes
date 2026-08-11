@@ -1,0 +1,12 @@
+# El repositorio almacena LF. El host cPanel es Linux y sirve estos
+# archivos tal cual: .htaccess y los .php se rompen con finales CRLF.
+* text=auto eol=lf
+
+# Binarios: nunca normalizar.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.ico binary
+*.zip binary
+*.pdf binary

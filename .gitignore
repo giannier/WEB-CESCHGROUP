@@ -1,0 +1,25 @@
+# Sistema operativo
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editores
+.vscode/
+.idea/
+*.swp
+
+# Entrega original ya desempaquetada; no se sube al host
+files.zip
+
+# Originales pesados de fotografía. Al repositorio va SOLO la
+# versión optimizada que sirve el sitio (JPG/WebP < 300 KB).
+assets/img/**/originales/
+*.psd
+*.ai
+*.tif
+
+# Nada de credenciales en el repositorio: el endpoint PHP lee su
+# configuración de constantes en contacto.php, que sí se versiona,
+# pero cualquier archivo de entorno queda afuera.
+.env
+.env.*

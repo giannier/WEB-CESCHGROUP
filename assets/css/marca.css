@@ -1,0 +1,55 @@
+/* ============================================================
+   MARCA — ÚNICO ARCHIVO QUE HAY QUE EDITAR CUANDO MARKETING
+   ENTREGUE LOGO, PALETA Y TIPOGRAFÍA.
+   Todo el sitio lee estas variables. No hay colores ni fuentes
+   escritos a mano en estilos.css.
+   ============================================================ */
+
+:root {
+
+  /* ---- 1. COLORES DE MARCA (provisionales) ---------------- */
+  --c-primario:        #0B3D6B;  /* AZUL CORPORATIVO — institucional */
+  --c-primario-alto:   #14568F;  /* variante clara del primario */
+  --c-primario-bajo:   #062440;  /* variante oscura, fondos densos */
+
+  --c-acento:          #0F7A42;  /* VERDE CORPORATIVO — CTA y avances */
+  --c-acento-oscuro:   #0A5C31;  /* hover del acento */
+  --c-acento-claro:    #34C77B;  /* verde sobre fondos oscuros */
+
+  /* ---- 2. NEUTROS (rara vez cambian) ---------------------- */
+  --c-tinta:           #0E1417;
+  --c-texto:           #1A2226;
+  --c-texto-suave:     #5B676E;
+  --c-concreto:        #E4E2DD;  /* gris cemento de fondos alternos */
+  --c-papel:           #F6F5F3;
+  --c-blanco:          #FFFFFF;
+  --c-linea:           rgba(14, 20, 23, .14);
+  --c-linea-clara:     rgba(255, 255, 255, .18);
+
+  /* ---- 3. ESTADOS DE OBRA -------------------------------- */
+  /* Los tres derivan de la marca: verde = obra viva, azul = obra
+     entregada, pizarra = cartera todavía sin ejecutar. */
+  --c-ejecucion:       #0F7A42;  /* en ejecución */
+  --c-culminada:       #14568F;  /* culminada / entregada */
+  --c-proyecto:        #48606F;  /* proyecto / expediente */
+
+  /* ---- 4. TIPOGRAFÍA ------------------------------------- */
+  /* Display: titulares. Texto: cuerpo. Dato: cifras y fichas. */
+  --f-display: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+  --f-texto:   'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+  --f-dato:    'IBM Plex Mono', ui-monospace, 'Courier New', monospace;
+
+  --peso-display: 800;
+  --track-display: -.025em;   /* tracking de titulares */
+  --track-eyebrow: .16em;     /* tracking de etiquetas */
+
+  /* ---- 5. ESCALA Y RITMO --------------------------------- */
+  --ancho-max: 1240px;
+  --radio: 2px;               /* casi recto: lenguaje técnico */
+  --radio-pill: 999px;
+  --sombra: 0 1px 2px rgba(14,20,23,.06), 0 12px 32px rgba(14,20,23,.08);
+  --sombra-alta: 0 24px 60px rgba(14,20,23,.16);
+
+  --e1: .5rem;  --e2: 1rem;   --e3: 1.5rem;  --e4: 2rem;
+  --e5: 3rem;   --e6: 4.5rem; --e7: 7rem;
+}
