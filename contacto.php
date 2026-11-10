@@ -16,8 +16,8 @@
 declare(strict_types=1);
 
 // ---- Configuración -----------------------------------------
-const DESTINO         = 'contacto@ceschgroup.com';
-const DESTINO_RECLAMO = 'contacto@ceschgroup.com';
+const DESTINO         = 'comercial@ceschgroup.com';
+const DESTINO_RECLAMO = 'comercial@ceschgroup.com';
 const REMITENTE       = 'web@ceschgroup.com';
 const SEGUNDOS_MINIMOS = 3;      // menos que esto es un bot
 const MAX_CAMPO        = 5000;   // corte defensivo por campo

@@ -11,7 +11,7 @@ const EMPRESA = {
   telefono: "(074) 000 000",
   celular: "+51 900 000 000",
   whatsapp: "51900000000",              // solo dígitos, con código de país
-  email: "contacto@ceschgroup.com",           // ← confirmar dominio real
+  email: "comercial@ceschgroup.com",           // ← confirmar dominio real
   emailLicitaciones: "licitaciones@ceschgroup.com",
   direccion: "Av. Referencial 000, Chiclayo — Lambayeque, Perú",
   horario: "Lunes a viernes de 8:00 a. m. a 6:00 p. m.",
